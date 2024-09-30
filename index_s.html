@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <link href="./css/s_pc_min_1360.css" rel="stylesheet" type="text/css">
+    <!-- <link href="./css/mo_max_800.css" rel="stylesheet" type="text/css"> -->
+    <link href="./css/s_mo_max_800.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="w_header">
+            <div class="width_align flex_box">
+              <!-- 초기 메뉴 상단 -->
+                <div class="logo">
+                  <img src="./img/logo.png">
+                </div>
+                <nav class="menu flex_box">
+                    <div class="top_menu">
+                        <a href="#">모델</a>
+                        <div class="menu_sub">
+                          <a href="#">All</a>
+                          <a href="#">SEDAN</a>
+                          <a href="#">SUV</a>
+                          <a href="#">BLACK</a>
+                          <a href="#">CONCEPT</a>
+                        </div>
+                    </div>
+                    <div class="top_menu">
+                        <a href="#">전기차</a>
+                        <div class="menu_sub">
+                          <a href="#">G80</a>
+                          <a href="#">GV70</a>
+                          <a href="#">G60</a>
+                          <a href="#">전기차 구매가이드</a>
+                          <a href="#">전기차 혜택 안내</a>
+                        </div>
+                    </div>
+                    <div class="top_menu">
+                        <a href="#">체험</a>
+                        <div class="menu_sub">
+                          <a href="#">스페이스</a>
+                          <a href="#">시승신청</a>
+                          <a href="#">전시장 찾기</a>
+                          <a href="#">제네시스 드라이빙 익스피리언스</a>
+                        </div>
+                    </div>
+                    <div class="top_menu">
+                        <a href="#">구매</a>
+                        <div class="menu_sub">
+                          <a href="#">견적내기</a>
+                          <a href="#">전기차 구매가이드</a>
+                          <a href="#">구매 상담 신청</a>
+                          <a href="#">제네시스 스펙트럼</a>
+                          <a href="#">사양 조회하기</a>
+                        </div>
+                    </div>
+                    <div class="top_menu">
+                        <a href="#">멤버스</a>
+                        <div class="menu_sub">
+                          <a href="#">제네시스 멤버십</a>
+                          <a href="#">MY GENESIS 앱</a>
+                          <a href="#">모빌리티 케어</a>
+                          <a href="#">차량관리 서비스</a>
+                          <a href="#">테크놀로지</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="main_cs_wrap flex_box">
+                    <a href="#" class="not">고객센터</a>
+                    <a href="#" class="not">마이페이지</a>
+                    <a href="#" class="not">
+                        <img src="./img/search_icon.png">
+                    </a>
+                    <a href="#" class="menu_open">
+                        <img src="./img/menu_icon.png"></a>
+                    </a>
+                </div>
+                <div class="side_icon">
+                  <img src="./img/side_4.png" alt="사이트아이콘">
+                  <p>견적내기</p>
+                  <img src="./img/side_3.png" alt="사이트아이콘">
+                  <p>시승신청</p>
+                  <img src="./img/side_1.png" alt="사이트아이콘">
+                  <p>판매처 검색</p>
+                  <img src="./img/side_2.png" alt="사이트아이콘">
+                  <p>이달의<br>구매혜택</p>
+              </div>
+            </div>
+            <!-- 숨겨진 전체 메뉴  -->
+            <div class="menu_bg">
+              <div class="right_top_menu">
+                <a href="#">모델</a>
+                <div class="right_sub_menu">
+                  <a href="#">G90 Black</a>
+                  <a href="#">G90 Long Wheel Base</a>
+                  <a href="#">G90</a>
+                  <a href="#">G80</a>
+                  <a href="#">Electrified G80</a>
+                  <a href="#">G70</a>
+                  <a href="#">G70 Shooting Brake</a>
+                  <a href="#">G80</a>
+                  <a href="#">G80 Coupe</a>
+                  <a href="#">G60</a>
+                  <a href="#">콘셉트카 소개</a>
+                </div>
+              </div>
+              <div class="right_top_menu">
+                <a href="#">전기차</a>
+                <div class="right_sub_menu">
+                  <a href="#">G80</a>
+                  <a href="#">GV70</a>
+                  <a href="#">G60</a>
+                  <a href="#">전기차 구매가이드</a>
+                  <a href="#">전기차 혜택 안내</a>
+                </div>
+              </div>
+              <div class="right_top_menu">
+                <a href="#">체험</a>
+                <div class="right_sub_menu">
+                  <a href="#">스페이스</a>
+                  <a href="#">시승신청</a>
+                  <a href="#">전시장 찾기</a>
+                  <a href="#">제네시스 드라이빙 익스피리언스</a>
+                </div>
+              </div>
+              <div class="right_top_menu">
+                <a href="#">구매</a>
+                <div class="right_sub_menu">
+                  <a href="#">견적내기</a>
+                  <a href="#">전기차 구매가이드</a>
+                  <a href="#">구매 상담 신청</a>
+                  <a href="#">제네시스 스펙트럼</a>
+                  <a href="#">사양 조회하기</a>
+                </div>
+              </div>
+              <div class="right_top_menu">
+                <a href="#">멤버스</a>
+                <div class="right_sub_menu">
+                  <a href="#">제네시스 멤버십</a>
+                  <a href="#">MY GENESIS 앱</a>
+                  <a href="#">모빌리티 케어</a>
+                  <a href="#">차량관리 서비스</a>
+                  <a href="#">테크놀로지</a>
+                </div>
+              </div>
+            </div>
+        </header>
+        <section class="page p1_body">
+            <div class="move_box">
+                <div class="img_box img1">
+                  <p class="text_box">GENESIS</p>
+                  <h2 class="title_box">GV70</h2>
+                  <a href="#" class="view">>자세히보기</a>
+                  <img src="./img/maiabanner/mainbanner2(g80).jpg" alt="g80">
+                </div>
+                <div class="img_box img2">
+                  <p class="text_box">GENESIS</p>
+                  <h2 class="title_box">GV80</h2>
+                  <a href="#" class="view">>자세히보기</a>
+                  <img src="./img/maiabanner/mainbanner1(gv80).jpg" alt="gv80">
+                </div>
+                <div class="img_box img3">
+                  <p class="text_box">GENESIS</p>
+                  <h2 class="title_box">GV80</h2>
+                  <a href="#" class="view">>자세히보기</a>
+                  <img src="./img/maiabanner/mainbanner3(gv80 coupe).jpg" alt="gv80coupe">
+                </div>
+                <div class="img_box img4">
+                  <p class="text_box">GENESIS</p>
+                  <h2 class="title_box">GV70</h2>
+                  <a href="#" class="view">>자세히보기</a>
+                  <img src="./img/maiabanner/mainbanner4(gv70).jpg" alt="gv70">
+                </div>
+                <div class="img_box img5">
+                  <p class="text_box">GENESIS</p>
+                  <h2 class="title_box">Neolun Concept</h2>
+                  <a href="#" class="view">>자세히보기</a>
+                  <img src="./img/maiabanner/mainbanner5(NeolunConcept).jpg" alt="NeolunConcept">
+                </div>
+                <div class="img_box img6">
+                  <p class="text_box">GENESIS</p>
+                  <h2 class="title_box">G80</h2>
+                  <a href="#" class="view">>자세히보기</a>
+                  <img src="./img/maiabanner/mainbanner6(g80).jpg" alt="g80">
+                </div>
+            </div>
+            <div class="width_align">
+                <div class="banner_title p1 flex_box">
+                  <h3 class="sub_title">"제 2의 전성기에 시동을 걸어라!"</h3>
+                  <div class="point_but_wrap flex_box">
+                    <button class="point but_1"></button>
+                    <button class="point but_2"></button>
+                    <button class="point but_3"></button>
+                    <button class="point but_4"></button>
+                    <button class="point but_5"></button>
+                    <button class="point but_6"></button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="p23_body page">
+            <!-- page -->
+            <div class="width_align">
+              <h2 class="title_box">Our Models</h2>
+              <!-- <h2 class="title_box"></h2> -->
+              <p class="text_box">역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 제네시스 브랜드의 라인업을 살펴보세요.</p>
+              <!-- <p class="text_box"></p> -->
+              <div class="p2_cg flex_box">
+              <!-- <div class="car_info_wrap flex_box"> -->
+                <ul class="p2_con p2_c1">
+                <!-- <ul class="car_info"> -->
+                  <li class="p2_img">
+                  <!-- <li class="car_img"></li> -->
+                    <h2>GV70</h2>
+                    <img src="./img/GV70.png" alt="70">
+                    <div class="car_color">
+                        <input type="radio" id="red" name="red" value="red">
+                        <label for="red" class="c_1"></label> 
+                        <input type="radio" id="blue" name="blue" value="blue">
+                        <label for="blue" class="c_2"></label> 
+                        <input type="radio" id="green" name="green" value="green">
+                        <label for="green" class="c_7"></label> 
+                        <input type="radio" id="black" name="black" value="black">
+                        <label for="black" class="c_3"></label> 
+                        <input type="radio" id="white" name="white" value="white">
+                        <label for="white" class="c_5"></label> 
+                        <input type="radio" id="gray" name="gray" value="gray">
+                        <label for="gray" class="c_6"></label> 
+                    </div>
+                  </li>
+                  <li >
+                    <div class="p2_open o_1">자세히보기</div> 
+                    <button class="close_but b_1">X</button>
+                  </li>
+                  <li class="p2_info i_1">배기량(cc):3470</li>
+                  <li class="p2_info i_1">최고출력(ps/rpm):380/5,800</li>
+                  <li class="p2_info i_1">연료탱크용량(L):66</li>
+                  
+                  <!-- <li class="in_car_info"></li> -->
+                </ul>
+                <ul class="p2_con p2_c2">
+                  <li class="p2_img">
+                    <h2>GV60</h2>
+                    <img src="./img/60m.png" alt="GV60">
+                    <div class="car_color">
+                        <input type="radio" id="red" name="red" value="red">
+                        <label for="red" class="c_1"></label> 
+                        <input type="radio" id="blue" name="blue" value="blue">
+                        <label for="blue" class="c_7"></label> 
+                        <input type="radio" id="green" name="green" value="green">
+                        <label for="green" class="c_8"></label> 
+                        <input type="radio" id="black" name="black" value="black">
+                        <label for="black" class="c_5"></label> 
+                        <input type="radio" id="white" name="white" value="white">
+                        <label for="white" class="c_3"></label> 
+                        <input type="radio" id="gray" name="gray" value="gray">
+                        <label for="gray" class="c_4"></label> 
+                    </div>
+                  </li>
+                  <li >
+                    <div class="p2_open o_2">자세히보기</div> 
+                    <button class="close_but b_2">X</button>
+                  </li>
+                  <li class="p2_info i_2">배터리용량(kWh):3470</li>
+                  <li class="p2_info i_2">용량(Ah):111.2</li>
+                  <li class="p2_info i_2">합산(kW):360</li>
+                </ul>
+                <ul class="p2_con p2_c3">
+                  <li class="p2_img">
+                    <h2>GV80</h2>
+                    <img src="./img/GV80.png" alt="GV80">
+                    <div class="car_color">
+                        <input type="radio" id="red" name="red" value="red">
+                        <label for="red" class="c_1"></label> 
+                        <input type="radio" id="blue" name="blue" value="blue">
+                        <label for="blue" class="c_2"></label> 
+                        <input type="radio" id="green" name="green" value="green">
+                        <label for="green" class="c_7"></label> 
+                        <input type="radio" id="black" name="black" value="black">
+                        <label for="black" class="c_3"></label> 
+                        <input type="radio" id="white" name="white" value="white">
+                        <label for="white" class="c_5"></label> 
+                        <input type="radio" id="gray" name="gray" value="gray">
+                        <label for="gray" class="c_6"></label> 
+                    </div> 
+                  </li>
+                  <li >
+                    <div class="p2_open o_3">자세히보기</div> 
+                    <button class="close_but b_3">X</button>
+                  </li>
+                  <li class="p2_info i_3">배기량(cc):3470</li>
+                  <li class="p2_info i_3">최고출력(ps/rpm):380/5,800</li>
+                  <li class="p2_info i_3">연료탱크용량(L):80</li>
+                </ul>
+              </div>  
+              <div class="p3_body width_align flex_box">
+                <!-- <div class="service_wrap width_align flex_box"> -->
+                  <div class="p3_g">
+                    <div class="p3_img">
+                      <img src="./img/p3_2.png" alt="아이콘">
+                      <p class="p3_txt">구매상담 신청</p>
+                    </div>
+                    
+                  </div>
+                  <div class="p3_g">
+                    <div class="p3_img">
+                      <img src="./img/p3_3.png" alt="아이콘">
+                      <p class="p3_txt">모델비교</p>
+                    </div>
+                    
+                  </div>
+                  <div class="p3_g">
+                    <div class="p3_img">
+                      <img src="./img/p3_4.png" alt="아이콘">
+                      <p class="p3_txt">카탈로그</p>
+                    </div>
+                    
+                  </div>
+                  <div class="p3_g">
+                    <div class="p3_img">
+                      <img src="./img/p3_1.png" alt="아이콘">
+                      <div class="p3_txt">차량 제품 구매</p>
+                    </div>
+                    
+                  </div>
+                  <!-- <div class="service_icon"></div> -->
+                </div>
+              </div>
+          </section>
+        <section class="p4_body page">
+                <h2 class="title_box">PROMOTION</h2>
+                <!-- <div class="p4_txt_top"></div> -->
+                <div class="prm_wrap">
+                  <div class="arrow_but_wrap">
+                    <button class="arrow_but left_but"><</button>
+                    <button class="arrow_but right_but">></button>
+                  </div>
+                  <div class="prm_move_box">
+                    <div class="prm_img_box dis">
+                    </div>
+                    <div class="prm_img_box">
+                      <div class="p4_img_1 p4_img">
+                        <img src="./img/pro_img_2.png" alt="프로모션이미지">
+                      </div>
+                      <div class="p4_txt">
+                        <h2>멤버쉽 무료 적용 프로모션</h2>
+                        <p>또는 매장 방문하여 신청 할 수 있습니다.</p>
+                        <h6>(기간 2024.10.01~2024.12.31)</h6>
+                      </div>
+                    </div>
+                    <div class="prm_img_box">
+                      <div class="p4_img_2 p4_img">
+                        <img src="./img/pro_img_1.png" alt="프로모션이미지">
+                      </div>
+                      <div class="p4_txt">
+                        <h2>제네시스 "G90 무료 시승" 프로모션</h2>
+                        <p>다가오는 10월 부터 제네시스 G90의 무료 시승 체험을 신청 할 수 있습니다.</p>
+                        <h6>(기간 2024.10.01~2024.12.31)</h6>
+                      </div>
+                    </div>
+                    <div class="prm_img_box">
+                      <div class="p4_img_3 p4_img">
+                        <img src="./img/pro_img_3.png" alt="프로모션이미지">
+                      </div>
+                      <div class="p4_txt">
+                        <h2>제네시스 전기차 10% 할인</h2>
+                        <p>제네시스의 모든 전기차 할인</p>
+                        <h6>(기간 2024.10.01~2024.12.31)</h6>
+                      </div>
+                    </div>
+                    <div class="prm_img_box">
+                      <div class="p4_img_1 p4_img">
+                        <img src="./img/pro_img_2.png" alt="프로모션이미지">
+                      </div>
+                      <div class="p4_txt">
+                        <h2>멤버쉽 무료 적용 프로모션</h2>
+                        <p>또는 매장 방문하여 신청 할 수 있습니다.</p>
+                        <h6>(기간 2024.10.01~2024.12.31)</h6>
+                      </div>
+                    </div>
+                    <div class="prm_img_box">
+                      <div class="p4_img_2 p4_img">
+                        <img src="./img/pro_img_1.png" alt="프로모션이미지">
+                      </div>
+                      <div class="p4_txt">
+                        <h2>제네시스 "G90 무료 시승" 프로모션</h2>
+                        <p>다가오는 10월 부터 제네시스 G90의 무료 시승 체험을 신청 할 수 있습니다.</p>
+                        <h6>(기간 2024.10.01~2024.12.31)</h6>
+                      </div>
+                    </div>
+                    <div class="prm_img_box">
+                      <div class="p4_img_3 p4_img">
+                        <img src="./img/pro_img_3.png" alt="프로모션이미지">
+                      </div>
+                      <div class="p4_txt">
+                        <h2>제네시스 전기차 10% 할인</h2>
+                        <p>제네시스의 모든 전기차 할인</p>
+                        <h6>(기간 2024.10.01~2024.12.31)</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </section>
+        <section class="page p5_body flex_box info_page">
+          <div class="p5_cg">
+            <div class="p5_txt">
+              <h2 class="title_box">GENESIS BRAND</h2>
+              <p class="text_box">우리는 자신만의 취향과 안목을 가진 사람들을 위해 <br> 
+                최상의 자동차를 만들고,그를 통해 삶의 긍정적인 변화를<br> 
+                만들어내는 것을 목표로 합니다.
+              </p>
+              <a href="#" class="view">>자세히보기</a href="#">
+            </div>
+            <div class="p5_img">
+              <img src="./img/mblock.jpg" alt="브랜드이미지">
+            </div>
+          </div>
+          <div class="p5_cg">
+            <div class="p5_txt">
+              <h2 class="title_box">MEMBERSHIP</h2>
+              <p class="text_box">제네시스를 선택한 순간 당신은 특별해집니다.</p>
+              <a href="#" class="view">>자세히보기</a>
+            </div>
+            <div class="p5_img">
+              <img src="./img/menbership.jpg" alt="멤버십사진">
+            </div>
+          </div>
+        </section>
+        <section class="page p6_body">
+          <div class="t_box">
+            <h2 class="title_box">전기차 구매 혜택</h2>
+            <p class="text_box">제네시스에서 진행중인 다양한 전기차 구매 혜택을 소개합니다</p>
+            <a href="#" class="view">>자세히보기</a>
+        </div> 
+          <div class="p6_img">
+            <img src="./img/elec_car.jpg" alt="이벤트배너">
+          </div>
+        </section>
+        <section class="p7_body page">
+          <div class="width_align">
+              <h2 class="title_box">서비스센터 찾기</h2>
+              <p class="text_box">제네시스제품 관련 내용은 담당자 또는 대리점을 통해 문의 바랍니다.</p>
+
+              <div class="p_7_con_tg flex_box">
+                  <button class="left_guide inbut">담당자 안내</button>
+                  <button class="right_guide inbut">전시장 안내</button>
+              </div>
+              <div class="p7_cG flex_box">
+                  <div class="in_cs">
+                     <div class="in_cs_1">
+                      <div class="in_cs_box">
+                          <h2>제품 고객상담실</h2>
+                          <p>평일 09:00~17:00 | 주말 및 공휴일 휴무</p>
+                          <h2>080-700-6000</h2>
+                          <div class="button_wrap">
+                              <button class="but">1:1문의</button>
+                              <button class="but">셀프조치</button>
+                          </div>
+                      </div>
+                      <div class="in_cs_box">
+                          <h2>제품구입 및 샘플요청</h2>
+                          <p>제품별 자세한 구매 문의는<br>대리점이나
+                              관할 지역 영업소에 <br>문의해 주시기 바랍니다.</p>
+                          <div class="button_wrap">
+                              <button class="but">대리점안내</button>
+                              <button class="but">영업소안내</button>
+                          </div>
+                      </div>
+                      <div class="in_cs_box">
+                          <h2>자료찾기</h2>
+                          <p>제품에 관한<br>자료 확인은
+                              검색센터를 <br>이용해주시기 바랍니다.</p>
+                          <div class="button_wrap">
+                              <button class="but">바로가기</button>
+                          </div>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="in_cs">
+                      <div class="in_cs_2">
+                          <div class="in_cs_box">
+                              <h2>매장 찾기</h2>
+                              <p>가까운 전시장에서<br>편하고 빠르게 만나보세요.</p>
+                              <div class="button_wrap">
+                                  <button class="but">빠른 검색</button>
+                                  <button class="but">지역 검색</button>
+                              </div>
+                          </div>
+                          <div class="in_cs_box">
+                              <h2>제네시스 스페이스</h2>
+                              <p>제네시스의 모든 라인업을<br>가장 완벽한 환경에서 <br>
+                                  경험하실 수 있는 공간입니다.</p>
+                              <div class="button_wrap">
+                                  <button class="but">바로가기</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+        <footer class="ft ">
+          <div class="in_foot">
+            <div class="download_box">
+              <div class="app">
+                <div class="ft_app_dw_txt_1 ">
+                    <h3>MY GENESIS APP 다운로드</h3>
+                </div>
+                <div class="ft_app_dw_txt_2 ">
+                    <h3>Google Play</h3>
+                </div>
+                <div class="ft_app_dw_txt_3 ">
+                    <h3>App Store</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="width_align">
+          <div class="in_foot flex_box ft_no">
+            <div class="left_in_foot">
+                <!-- <a href="#">Share</a>
+                <a href="#">
+                    <img src="./img/새 폴더/푸터 아이콘/KakaoTalk_20240806_170125942.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/새 폴더/푸터 아이콘/KakaoTalk_20240806_170125942_03.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/새 폴더/푸터 아이콘/KakaoTalk_20240806_170125942_02.png" alt="">
+                </a> -->
+                Share
+                <img class="left_con" src="./img/푸터 아이콘/KakaoTalk_20240806_170125942.png" alt="">
+                <img class="left_con" src="./img/푸터 아이콘/KakaoTalk_20240806_170125942_03.png" alt="">
+                <img class="left_con" src="./img/푸터 아이콘/KakaoTalk_20240806_170125942_02.png" alt="">
+            </div>
+            <div class="right_in_foot">
+                <a href="#">top △</a>
+            </div>
+          </div>
+          <div class="in_foot flex_box ft_no">
+            <div class="left_in_foot">
+                <p>
+                  [공지사항]시스템 개선 작업으로 인한 제네시스 커넥티드 서비스 일시 가입 불가 안내
+                </p>
+            </div>
+            <div class="right_in_foot">
+                <img src="./img/푸터 아이콘/ico-arrow-white.png" alt="">
+                <img src="./img/푸터 아이콘/ico-pause-white-type2.png" alt="">
+                <img src="./img/푸터 아이콘/ico-swiper-arrow.png" alt="">
+            </div>
+          </div>
+          <div class="in_foot flex_box">
+            <div class="left_in_foot">
+                <pre>사이트맵 | 이용약관 | 개인정보 처리방침 | 저작권 안내 | 보증안내 | 자동차 교환 및 환불 중재 규정 안내 | 하자 재발 통보 안내</pre>
+            </div>
+            <div class="right1_in_foot ft_no">
+                <img src="./img/푸터 아이콘/KakaoTalk_20240806_170125942.png" alt="">
+                <img src="./img/푸터 아이콘/KakaoTalk_20240806_170125942_01.png" alt="">
+                <img src="./img/푸터 아이콘/KakaoTalk_20240806_170125942_04.png" alt="">
+            </div>
+          </div>
+          <div class="in_foot flex_box ft_no">
+            <div class="left_in_foot">
+                <img src="./img/푸터 아이콘/ico-worldwide.png" alt="">제네시스 월드와이드
+                <img src="./img/푸터 아이콘/ico-privacy-center.png" alt="">프라이버시 센터
+                <img src="./img/푸터 아이콘/ico-new-window.png" alt="">제네시스 부티크
+                <img src="./img/푸터 아이콘/ico-new-window.png" alt="">내비게이션 업데이트
+                <img src="./img/푸터 아이콘/ico-new-window.png" alt="">제네시스 드라이빙 아카데미
+                <img src="./img/푸터 아이콘/ico-new-window.png" alt="">윤리경영 사이버 감사실
+                <img src="./img/푸터 아이콘/ico-new-window.png" alt="">인재 채용
+            </div>
+            <div class="right_in_foot">
+                ENG ㅣ KOR
+            </div>
+          </div>
+          <div class="in_foot">
+            <div class="ft_lg">
+              <img src="./img/logo.png" alt="">
+                <div class="ft_lg_img_1">
+                    <p>© Copyright 2024 Hyundai Motor Company.
+                        All Rights Reserved.</p>
+                </div>
+            </div>
+          </div> 
+        </div>
+        </footer>
+    </div>
+</body>
+</html>
+    
